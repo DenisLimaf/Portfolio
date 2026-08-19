@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio | Denilson</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="favicon.webp">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="texto">
+            <h1 class="titulo">Portfólio</h1>
+            <p class="subtitulo">Meu primeiro portfólio de desenvolvimento</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="cards">
+            <article class="card_box" onclick="openModal('projetos')">
+                <span class="card-icon">💻</span>
+                <span class="card-tag">Projetos</span>
+                <h2>Desenvolvimento Web</h2>
+                <p>Criação de interfaces web modernas, responsivas e otimizadas para todas as telas.</p>
+            </article>
+            <article class="card_box" onclick="openModal('habilidades')">
+                <span class="card-icon">⚡</span>
+                <span class="card-tag">Habilidades</span>
+                <h2>Tecnologias</h2>
+                <p>Domínio em HTML5, CSS3, JavaScript e constante aprendizado em frameworks de mercado.</p>
+            </article>
+            <article class="card_box" onclick="openModal('contato')">
+                <span class="card-icon">✉️</span>
+                <span class="card-tag">Contato</span>
+                <h2>Conecte-se</h2>
+                <p>Interessado em colaborar ou bater um papo? Vamos construir o próximo projeto juntos.</p>
+            </article>
+        </section>
+    </main>
+
+    <div id="modal-overlay" class="modal-overlay" onclick="closeModal(event)">
+        <canvas id="matrix-canvas" class="matrix-canvas"></canvas>
+        <div class="modal-card">
+            <button class="modal-close" onclick="closeModal(event, true)">&times;</button>
+            <div class="modal-header-accent">
+                <div class="modal-icon" id="modal-icon">💻</div>
+                <div class="modal-indicator">
+                    <span class="modal-arrow">↴</span>
+                    <span class="modal-indicator-text">Expandido do card anterior</span>
+                </div>
+            </div>
+            <span class="card-tag" id="modal-tag">Tag</span>
+            <h2>
+                <a id="modal-title" class="modal-title-link" href="#">Título</a>
+            </h2>
+            <div class="modal-content" id="modal-content">
+                Conteúdo detalhado.
+            </div>
+        </div>
+    </div>
+
+    <footer class="rodape">
+        <p>© 2026 - Meu Portfólio</p>
+        <p>Desenvolvido por Denilson</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
