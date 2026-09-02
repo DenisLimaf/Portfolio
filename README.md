@@ -85,6 +85,6 @@ Portfolio/
 
 ## 👤 Autor
 
-Desenvolvido com dedicação por **Denilson**.
+Desenvolvido por **Denilson**.
 
 - **GitHub**: [@Denilsonstrife](https://github.com/Denilsonstrife)
