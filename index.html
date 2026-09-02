@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio | Denilson</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" type="image/png" href="favicon.webp">
@@ -20,20 +20,22 @@
 
     <main class="container">
         <section class="cards">
-            <article class="card_box" onclick="openModal('projetos')">
+            <article class="card_box" onclick="openModal('experiencias')">
                 <span class="card-icon">💻</span>
                 <span class="card-tag">Sobre experiências</span>
                 <h2>Experiências pessoais</h2>
                 <p>Já tive experiências com a área de admninistração, tendo concluído um curso técnico subsequente na área</p>
             </article>
+
             <article class="card_box" onclick="openModal('habilidades')">
                 <span class="card-icon">⚡</span>
                 <span class="card-tag">Um pouco sobre habilidades</span>
                 <h2>Habilidades</h2>
                 <p>Tenho habilidade em programação, admninistração e inglês. Sempre estou apto a me adaptar e aprender novas habilidades.</p>
             </article>
-            <article class="card_box" onclick="openModal('contato')">
-                <span class="card-icon">🎯 </span>
+
+            <article class="card_box" onclick="openModal('objetivos')">
+                <span class="card-icon">🎯</span>
                 <span class="card-tag">Principais objetivos</span>
                 <h2>Objetivos</h2>
                 <p>Meu objetivo é conseguir me tornar um programador, oferecer um serviço eficiente.</p>
@@ -41,6 +43,7 @@
         </section>
     </main>
 
+    <!-- Modal Interativo -->
     <div id="modal-overlay" class="modal-overlay" onclick="closeModal(event)">
         <canvas id="matrix-canvas" class="matrix-canvas"></canvas>
         <div class="modal-card">
@@ -53,11 +56,16 @@
                 </div>
             </div>
             <span class="card-tag" id="modal-tag">Tag</span>
-            <h2>
-                <a id="modal-title" class="modal-title-link" href="#">Título</a>
-            </h2>
-            <div class="modal-content" id="modal-content">
-                Conteúdo detalhado.
+            
+            <div class="modal-body-action">
+                <h2>
+                    <a id="modal-title" class="modal-title-link" href="#">
+                        Título
+                    </a>
+                </h2>
+                <p class="modal-hint-text">
+                    <span>👆</span> Clique no título acima para abrir a página completa
+                </p>
             </div>
         </div>
     </div>
@@ -67,6 +75,6 @@
         <p>Desenvolvido por Denilson</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
